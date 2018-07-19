@@ -6,8 +6,11 @@ const flashyTextStyle = {
 };
 
 const flashyCharStyle = {
-  transform:          'perspective(100px) rotateY(360deg)',
-  transitionDuration: '1s'
+  transform: [
+    { perspective: 100 },
+    { rotateY: 360 }
+  ],
+  transitionDuration: 1000
 };
 
 export default class FlashyText extends Component {
@@ -52,7 +55,7 @@ export default class FlashyText extends Component {
       if (hoverStates[idx] === undefined) hoverStates[idx] = false;
       if (chr !== ' ') {
         return <span key={ idx }
-                style={ hoverStates[idx] ? flashyCharStyle : "" }
+                style={ hoverStates[idx] ? flashyCharStyle : {} }
                 onMouseEnter={ () => this.onChange(idx) }
                 onMouseLeave={ () => this.onChange(idx) }>{ chr }</span>
       } else {

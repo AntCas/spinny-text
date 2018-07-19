@@ -1,7 +1,7 @@
 {
     "name": "spinny-text",
     "description": "Drop in component for creating letters than spin on mouseover",
-    "version": "1.0.4",
+    "version": "1.0.0",
     "author": "Anthony Castrio <anthonycastrio@gmail.com>",
     "keywords": [
         "React",
