@@ -6,11 +6,8 @@ const flashyTextStyle = {
 };
 
 const flashyCharStyle = {
-  transform: [
-    { perspective: 100 },
-    { rotateY: 360 }
-  ],
-  transitionDuration: 1000
+  transform: 'perspective(100px) rotateY(360deg)',
+  transition: 'transform 1000ms'
 };
 
 export default class FlashyText extends Component {
