@@ -2,7 +2,7 @@
 
 React Spinny Text
 
-![Demo of spinny text in action](https://i.imgur.com/NmATS99.mp4)
+![Demo of spinny text in action](https://i.imgur.com/FAriy8m.gif)
 
 [npm package download](https://www.npmjs.com/package/spinny-text)
 
