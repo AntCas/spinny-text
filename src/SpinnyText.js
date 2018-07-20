@@ -22,12 +22,15 @@ export default class FlashyText extends Component {
   }
 
   componentDidMount() {
-    const { hoverStates } = this.state;
+    const { hoverStates } = this.state,
+          { spinOnRender } = this.props;
 
-    setTimeout(() => {
-      Object.keys(hoverStates).forEach(id => this.onChange(id));
-      Object.keys(hoverStates).forEach(id => this.onChange(id));
-    }, 100);
+    if (spinOnRender) {
+      setTimeout(() => {
+        Object.keys(hoverStates).forEach(id => this.onChange(id));
+        Object.keys(hoverStates).forEach(id => this.onChange(id));
+      }, 100);
+    }
   }
 
   onChange(id) {

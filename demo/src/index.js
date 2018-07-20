@@ -20,7 +20,9 @@ render(
       fontSize: 48,
       color: 'white'
     }}>
-      <SpinnyText text="React Spinny Text Demo" />
+      <SpinnyText
+        text="React Spinny Text Demo"
+        spinOnRender={ true } />
     </h2>
   </div>, 
   document.getElementById('app')
