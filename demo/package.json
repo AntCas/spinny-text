@@ -13,6 +13,7 @@
         "react-dom": "^16.0.0"
     },
     "devDependencies": {
+        "spinny-text": "^1.0.0",
         "babel-core": "^6.21.0",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.6.1",
